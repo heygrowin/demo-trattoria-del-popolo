@@ -1,0 +1,104 @@
+/* Trattoria Del Popolo — family trattoria since 1984. Forest green + ivory + burgundy, serif headings, classic. */
+:root{
+  --green:#2f5d3f;--green-dark:#214530;--burgundy:#7c2230;--ivory:#f7f2e7;--ivory2:#efe7d4;
+  --ink:#30291f;--muted:#786d59;--line:#ded2b8;--gold:#b98a2e;--white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--ivory);line-height:1.55;-webkit-text-size-adjust:100%}
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 18px}
+img{max-width:100%;display:block}
+a{color:var(--burgundy)}
+h1,h2,h3,h4{margin:0 0 .4em;line-height:1.2;font-family:Georgia,"Times New Roman",serif}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip:focus{position:static;width:auto;height:auto;clip:auto;display:inline-block;padding:8px;background:var(--gold)}
+
+.top{position:sticky;top:0;z-index:50;background:var(--green);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.14)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem}
+.brand small{display:block;font-weight:400;font-size:.72rem;color:#d7e4d7;font-family:"Segoe UI",system-ui,sans-serif;letter-spacing:.02em}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:8px;background:var(--gold);color:#3a2a06;font-weight:900;flex:0 0 auto}
+.nav{display:flex;gap:4px;flex-wrap:wrap;margin:0;padding:0;list-style:none;font-family:"Segoe UI",system-ui,sans-serif}
+.nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;padding:9px 11px;border-radius:6px;min-height:40px;display:inline-flex;align-items:center}
+.nav a:hover,.nav a:focus{background:rgba(255,255,255,.16)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:48px;padding:12px 20px;border-radius:6px;font-weight:700;text-decoration:none;cursor:pointer;border:2px solid transparent;font-size:1rem;font-family:"Segoe UI",system-ui,sans-serif}
+.btn-accent{background:var(--burgundy);color:#fff;border-color:var(--burgundy)}
+.btn-accent:hover{background:#631a26;border-color:#631a26}
+.btn-ghost{background:#fff;color:var(--green-dark);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--green)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+
+section{padding:44px 0}
+.band-soft{background:var(--ivory2)}
+.band-accent{background:var(--green);color:#fff}
+.band-accent .section-sub,.band-accent a{color:#e6efe6}
+.band-accent .btn-accent{background:var(--gold);color:#3a2a06;border-color:var(--gold)}
+.section-title{font-size:1.7rem;color:var(--green-dark)}
+.band-accent .section-title{color:#fff}
+.section-sub{color:var(--muted);margin:0 0 22px;max-width:60ch;font-family:"Segoe UI",system-ui,sans-serif}
+
+.hero{background:linear-gradient(160deg,var(--ivory) 0%,var(--ivory2) 100%);padding:52px 0 48px;border-bottom:3px solid var(--gold)}
+.eyebrow{display:inline-block;background:var(--burgundy);color:#fff;font-weight:700;font-size:.78rem;padding:5px 12px;border-radius:4px;letter-spacing:.06em;text-transform:uppercase;font-family:"Segoe UI",system-ui,sans-serif}
+.hero h1{font-size:2.2rem;margin-top:14px;max-width:16ch;font-style:italic}
+.lead{font-size:1.1rem;color:#574d3c;max-width:52ch;margin:10px 0 0;font-family:"Segoe UI",system-ui,sans-serif}
+.rating-line{margin:20px 0 0}
+.rating-chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:6px;padding:8px 15px;text-decoration:none;color:var(--ink);font-size:.95rem;min-height:44px;font-family:"Segoe UI",system-ui,sans-serif}
+.rating-chip b{color:var(--burgundy)}
+.stars{color:var(--gold);letter-spacing:1px}
+
+.hours-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;text-align:center;max-width:460px}
+.hours-big{font-size:1.8rem;font-weight:900;color:var(--green-dark);font-family:"Segoe UI",system-ui,sans-serif}
+.hours-note{color:var(--muted);margin-top:6px;font-family:"Segoe UI",system-ui,sans-serif}
+
+.ph{color:var(--burgundy);font-style:italic;font-weight:600}
+.ph-banner{background:#fbf3df;border:1px dashed var(--gold);border-radius:8px;padding:12px 16px;margin-bottom:22px;font-size:.95rem;font-family:"Segoe UI",system-ui,sans-serif}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.menu-cat{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px 20px}
+.menu-cat.feature{border-color:var(--gold);box-shadow:0 0 0 2px #f1e4c1 inset}
+.menu-cat h3{font-size:1.2rem;color:var(--green-dark);border-bottom:2px solid var(--ivory2);padding-bottom:8px}
+.menu-cat p{margin:10px 0 0;font-family:"Segoe UI",system-ui,sans-serif}
+
+.place{display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+.photo-ph{background:repeating-linear-gradient(45deg,#e7dcc2,#e7dcc2 14px,#ded2b4 14px,#ded2b4 28px);border-radius:10px;min-height:200px;display:flex;align-items:center;justify-content:center}
+.photo-ph span{background:rgba(255,255,255,.85);padding:6px 14px;border-radius:999px;color:var(--muted);font-weight:700;font-size:.85rem;font-family:"Segoe UI",system-ui,sans-serif}
+.place-info{font-family:"Segoe UI",system-ui,sans-serif}
+.place-info .addr{font-weight:700;font-size:1.05rem;margin:0 0 6px}
+@media(min-width:720px){.place{grid-template-columns:1.1fr 1fr}}
+
+.rev-card{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;flex-wrap:wrap;font-family:"Segoe UI",system-ui,sans-serif}
+.rev-score{text-align:center;flex:0 0 auto}
+.rev-score b{display:block;font-size:2.8rem;line-height:1;color:var(--burgundy)}
+.rev-body{flex:1 1 260px;min-width:0}
+.muted{color:var(--muted)}.small{font-size:.86rem}
+.rev-body .btn{margin-top:10px}
+
+.bookform{max-width:640px;font-family:"Segoe UI",system-ui,sans-serif}
+.bookform .row{display:flex;gap:14px;flex-wrap:wrap}
+.bookform label{display:flex;flex-direction:column;gap:5px;font-weight:700;color:#fff;margin-bottom:14px;flex:1 1 160px;font-size:.92rem}
+.bookform input,.bookform textarea{font:inherit;padding:12px;border-radius:6px;border:1px solid var(--line);background:#fff;color:var(--ink);min-height:48px;width:100%}
+.bookform input:focus,.bookform textarea:focus{outline:3px solid var(--gold);border-color:var(--gold)}
+.demo-msg{display:none;background:#fff;color:var(--ink);border-radius:8px;padding:14px 16px;margin-top:8px;border-left:5px solid var(--gold)}
+.demo-msg.show{display:block}
+
+footer{background:var(--green-dark);color:#dfe8df;padding:34px 0;font-family:"Segoe UI",system-ui,sans-serif}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:22px}
+footer h4{color:#fff;font-size:1rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{padding:3px 0;color:#c3d0c3}
+footer a{color:#f0d79a}
+footer .note{color:#aebfae;font-size:.82rem;margin-top:8px}
+footer .ph{color:#e4c073}
+
+.demo-flag{position:fixed;left:0;right:0;bottom:56px;background:var(--green-dark);color:#dfe8df;text-align:center;font-size:.72rem;padding:5px 10px;z-index:59;margin:0;border-top:1px solid rgba(255,255,255,.12);font-family:"Segoe UI",system-ui,sans-serif}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:1px;background:var(--line)}
+.callbar a{flex:1;text-align:center;padding:14px 4px;text-decoration:none;font-weight:800;color:#fff;min-height:56px;display:flex;align-items:center;justify-content:center;gap:5px;font-size:.92rem;font-family:"Segoe UI",system-ui,sans-serif}
+.callbar .c1{background:var(--burgundy)}.callbar .c2{background:var(--green)}.callbar .c3{background:var(--gold);color:#3a2a06}
+body{padding-bottom:112px}
+@media(min-width:821px){.callbar{display:none}.demo-flag{position:static;bottom:auto}body{padding-bottom:0}}
+.hours-list{text-align:left;max-width:460px}
+.hours-list ul{list-style:none;margin:0 0 6px;padding:0}
+.hours-list li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-family:"Segoe UI",system-ui,sans-serif}
+.hours-list li:last-child{border-bottom:none}
+.hours-list li span:first-child{font-weight:700;color:var(--ink)}
+.hours-list li span:last-child{text-align:right;color:var(--muted)}
